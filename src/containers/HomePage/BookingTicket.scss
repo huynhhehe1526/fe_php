@@ -1,0 +1,259 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+}
+
+.containers {
+    width    : 100%;
+    max-width: 1200px;
+    margin   : 0 auto;
+    padding  : 20px;
+    display  : flex;
+    font-size: 24px;
+
+}
+
+/* Heading */
+h1 {
+    text-align   : center;
+    font-size    : 24px;
+    margin-bottom: 20px;
+
+    &.title-movie {
+        color: blue;
+    }
+
+}
+
+.time-remaining-value {
+    display   : block;
+    text-align: center;
+}
+
+.detail-ticket {
+    font-size: 20px;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .detail {
+        padding-left: 30px;
+        font-size   : 16px;
+    }
+}
+
+/* Time remaining */
+.time-remaining {
+    margin-bottom   : 20px;
+    float           : left;
+    width           : 40%;
+    margin-right    : 40px;
+    background-color: bisque;
+    color           : black;
+    display         : block;
+    padding         : 18px;
+    height          : 600px;
+
+    span {
+        display       : block;
+        padding-bottom: 9px;
+    }
+
+    .icon-payment {
+        width          : 100%;
+        height         : 50px;
+        display        : flex;
+        grid-gap       : 8px;
+        gap            : 10px;
+        text-align     : center;
+        justify-content: center;
+
+        .icon-momo {
+            position           : relative;
+            border-radius      : 50%;
+            width              : 18%;
+            height             : 70px;
+            background-image   : url('../../assets//images/image_bank/icon_momo.jpg');
+            background-repeat  : no-repeat;
+            background-position: center;
+            background-size    : cover;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .name-bank {
+                width     : auto;
+                top       : 60px;
+                position  : absolute;
+                text-align: center;
+            }
+        }
+
+        .icon-mb {
+            position           : relative;
+            border-radius      : 50%;
+            width              : 18%;
+            height             : 70px;
+            background-image   : url('../../assets//images/image_bank/icon_mb.jpg');
+            background-repeat  : no-repeat;
+            background-position: center;
+            background-size    : cover;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .name-bank {
+                width     : auto;
+                top       : 60px;
+                position  : absolute;
+                text-align: center;
+            }
+        }
+
+        .icon-agri {
+            position           : relative;
+            border-radius      : 50%;
+            width              : 18%;
+            height             : 70px;
+            background-image   : url('../../assets//images/image_bank/icon_agri.png');
+            background-repeat  : no-repeat;
+            background-position: center;
+            background-size    : cover;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .name-bank {
+                width     : auto;
+                top       : 60px;
+                position  : absolute;
+                text-align: center;
+            }
+        }
+
+        span {
+            width: 33.33%;
+
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* Seats */
+.seats {
+    float: left;
+    width: 60%;
+
+    .row {
+        display        : flex;
+        justify-content: space-between;
+        gap            : 22px;
+
+
+    }
+
+    .note {
+        height         : 40px;
+        margin-top     : 20px;
+        color          : red;
+        width          : 100%;
+        gap            : 15px;
+        text-align     : center;
+        justify-content: center;
+        padding        : 0 20px;
+
+        .left {
+            height: 100%;
+
+            display        : flex;
+            justify-content: center;
+            text-align     : center;
+
+            span {
+                width       : 33.33%;
+                height      : 100%;
+                padding-left: 10px;
+
+                i {
+                    padding-right: 10px;
+                }
+
+                .icon-square {
+                    width           : 10px;
+                    background-color: red;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.seat {
+    width      : 50px;
+    height     : 50px;
+    border     : 1px solid #ccc;
+    text-align : center;
+    line-height: 50px;
+    cursor     : pointer;
+    width      : 14%;
+
+    &:hover {
+        background-color: yellow;
+        color           : black;
+    }
+}
+
+.seat.selected {
+    background-color: #007bff;
+    color           : #fff;
+}
+
+.seat.unavailable {
+    background-color: #ccc;
+    cursor          : default;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .screen img {
+        max-width: 100%;
+    }
+
+    .seats {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+
+    .seat {
+        width : 40px;
+        height: 40px;
+    }
+}
+
+button {
+    &.close {
+        border: none;
+        color : none;
+    }
+}
+
+.image_bank {
+    border: 1px solid transparent;
+    width : 300px;
+    height: 300px;
+    margin: 10px 235px;
+
+    img {
+        width : 100%;
+        height: 100%;
+    }
+}

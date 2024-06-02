@@ -1,0 +1,507 @@
+.select-text.mega_custom {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-text.mega_custom span:first-child {
+    float: left;
+}
+
+.select-text.mega_custom span:last-child {
+    float: left;
+}
+
+.megaSelect .nice-select {
+    color: #ffd455;
+    padding-left: 0;
+    padding-right: 5px;
+    height: auto;
+    margin: 0;
+    background: none;
+    border: none;
+    line-height: normal;
+    font-family: 'UTMNokiaStandardBold', sans-serif;
+    font-size: 15px;
+}
+
+.megaSelect .nice-select:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 30px;
+    position: absolute;
+    right: -30px;
+    bottom: 15px;
+    width: 25px;
+    height: 13px;
+    border: 0;
+    margin-top: -14px;
+    transform: rotate(0deg);
+}
+
+.megaSelect .nice-select.open:after {
+    transform: rotate(180deg);
+    margin-top: 0;
+}
+
+.megaSelect .nice-select .list {
+    color: #000000;
+}
+
+.megaSelect .nice-select .list .option {
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.megaSelect .nice-select .option:hover,
+.megaSelect .nice-select .option.focus,
+.megaSelect .nice-select .option.selected.focus {
+    background: #000000;
+    color: #ffd555;
+}
+
+.showtime-items .items-title {
+    float: left;
+    width: 70%;
+}
+
+.showtime-items .items-select {
+    float: right;
+    width: calc(100% - 70%);
+    padding-top: 10px;
+    text-align: right;
+    position: relative;
+    padding-right: 25px;
+}
+
+.showtime-items .items-select label {
+    margin-right: 15px;
+    line-height: normal;
+}
+
+.items-select.showtimes-cinema .megaSelect {
+    float: right;
+}
+
+#Seating-Theatre.Cinimax_LCT.rendering {
+    min-height: 380px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#Seating-Theatre.Cinimax_LCT.rendering .seating_screen_3_lct{
+    right: 50%;
+    margin-right: -140px;
+}
+/*
+*/
+#Seating-Theatre.Cinimax_LCT {
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+#Seating-Theatre.Cinimax_LCT.Screen_4 {
+    min-height: 570px;
+    display: flex;
+    justify-content: center;
+}
+
+#Seating-Theatre.Cinimax_LCT.Screen_4 .Seating-Area.seatScreenFloorLCT{
+    position: relative;
+    margin: 0 auto;
+    right: 0 !important;
+    left: 10px;
+}
+/* #Seating-Theatre.Cinimax_LCT.Screen_4 .Seating-Area.seatScreenFloorLCT.Area1 td p{
+    color: red !important;
+    font-weight: bold;
+} */
+.Seating-Area.seatScreenFloorLCT td{
+    width: 25px;
+    height: 25px;
+    display: table-cell;
+    min-width: 25px;
+    padding: 4px;
+}
+#Seating-Theatre.Cinimax_LCT.Screen_4 .Seating-Area.seatScreenFloorLCT.Area2{
+    right: 15px !important;
+    top: 3px;
+}
+.Seating-Area.seatScreenFloorLCT.Area2 td{
+    width: 25px;
+    height: 25px;
+    display: table-cell;
+    min-width: 25px;
+    padding: 4px;
+}
+.Seating-Area.seatScreenFloorLCT td:empty{
+    padding: 0;
+    height: 34px;
+    width: 26px;
+}
+
+.chart-list.cinema_LCT.screen_4 td:empty{
+    height: 25px;
+}
+
+.content-select-ticket .sit-position{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cinema {
+    position: relative;
+    margin-top: 6px;
+    display: block;
+}
+
+.cinema .cinema-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.product-items .links-produce .detail {
+    width: 100%;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.product-items .links-produce .detail .detail_inner {
+    padding-bottom: 30px;
+}
+
+.product-items .links-produce .detail .mCSB_inside > .mCSB_container {
+    margin-right: 20px;
+}
+
+.ud-select-group .ud-Select-all {
+
+}
+
+.custom_wcseo {
+
+}
+
+.movie-hot .list-items .item-right .movie-tool .trailer {
+    padding: 3px 5px;
+    min-width: 60px;
+}
+
+.show-content-booking .box-table .btnSelect button[type="submit"] {
+    font-size: 14px;
+    color: #3e3e3e;
+    font-weight: 700;
+    padding: 7px 15px;
+    background-color: #ffcf29;
+    border: 0;
+    outline: none;
+}
+
+.movie-hot .list-items .item-right .movie-tool div:first-child {
+    float: left;
+}
+
+.release-group .showtimes-date {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.release-group .fimls-d p.cinemaName {
+    padding: 0;
+    color: #ffcf29;
+    background: none;
+    font-size: 19px;
+}
+
+.custom_wcseo .nice-select {
+    background: none;
+    padding-left: 0;
+    padding-right: 5px;
+    height: auto;
+    margin: 0;
+    border: 0;
+    line-height: 25px;
+    font-family: 'UTMNokiaStandard', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.custom_wcseo .nice-select:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 30px;
+    position: absolute;
+    right: -30px;
+    bottom: 15px;
+    width: 25px;
+    height: 13px;
+    border: 0;
+    margin-top: -12px;
+    transform: rotate(0deg);
+}
+
+.custom_wcseo .nice-select.open:after {
+    transform: rotate(180deg);
+    margin-top: -3px;
+    right: -15px;
+}
+
+.slide-group .slide-left a.seemore {
+    position: absolute;
+    z-index: 51;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-group .slide-left:before {
+    display: none;
+}
+
+.slide-group .slide-left img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-group .slide-left:hover img:before {
+    background-color: rgba(255, 255, 255, .3);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide-group .slide-left a {
+    position: absolute;
+    z-index: 51;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(229, 167, 61, 0.3);
+}
+
+#mega-footer {
+    height: auto;
+}
+
+#mega-footer .footer-content {
+    padding-bottom: 5px;
+}
+
+.phone-ticket .phone-number {
+    height: auto;
+    width: auto;
+    min-width: initial;
+    float: left;
+}
+
+.phone-ticket .phone-number:nth-of-type(1) {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    padding-right: 5px;
+}
+
+.phone-ticket .phone-number:nth-of-type(1) span {
+    padding: 0;
+}
+
+.phone-ticket .phone-number:nth-of-type(1) span:before {
+    display: none;
+}
+
+/*
+.phone-ticket .phone-number:nth-of-type(1):after {
+    content: '';
+    background: rgba(255, 255, 255, .3);
+    height: 1px;
+    width: calc(100% - 100px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+*/
+
+.footer-content .footer-right {
+
+}
+
+.phone-ticket .phone-number span {
+    line-height: normal;
+}
+
+.phone-ticket .phone-number span:first-child {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
+.phone-ticket .phone-number span:last-child {
+    font-size: 21px;
+}
+
+.phone-ticket .phone-number span:before {
+    top: 5px;
+}
+
+.phone-ticket h3 {
+    margin-bottom: 15px;
+}
+
+.footer-left .copyright {
+    padding-top: 35px;
+}
+
+.footer-right .copy-right {
+    text-align: right;
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-content .footer-right {
+    width: calc(100% - 690px);
+    padding-top: 12px;
+    position: relative;
+    float: right;
+}
+
+.showTimeMCT {
+
+}
+
+.showTimeCustom .cinema-label {
+    font-size: 16px;
+    color: #ffd555;
+    font-family: 'UTMNokiaStandardBold', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: block;
+    line-height: normal;
+    font-weight: 700;
+    background: url(../images/home/icon-notes.png) no-repeat left center;
+    padding-left: 18px !important;
+}
+
+.showTimeCustom .type_movie {
+    background: none;
+    line-height: normal;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 5px !important;
+}
+
+.showTimeCustom .about_showtimes {
+    margin-bottom: 2px !important;
+}
+.depart-content{
+    height: auto;
+}
+.showTimeCustom .groupABC {
+    padding-left: 17px;
+}
+
+.showtime-new .select-body .item .content-item .content-sp .about_showtimes {
+    padding-bottom: 0;
+}
+
+.popup-content-home img{
+    width: 50% !important;
+    max-width: 100%;
+}
+
+table.tbl-type-ticket.member tr.tmp.it{
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    #mega-footer .star-left img {
+        display: block;
+        width: 230px;
+        max-width: 100%;
+    }
+
+    .phone-ticket .phone-number span:last-child {
+        font-size: 21px;
+    }
+
+    .footer-left .copyright {
+        padding-top: 15px;
+    }
+
+    #mega-footer .star-left {
+        top: -35px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .phone-ticket .phone-number span:first-child {
+        font-size: 15px;
+    }
+
+    .phone-ticket .phone-number span:last-child {
+        font-size: 19px;
+    }
+
+    .footer-content .footer-right {
+        width: calc(100% - 690px);
+    }
+
+    #mega-footer .star-left {
+        top: -50px;
+    }
+
+    #mega-footer .star-left img {
+        width: 193px;
+        height: 218px;
+        display: block;
+    }
+
+    .footer-content {
+        padding-right: 130px;
+    }
+
+    .footer-left .copyright {
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #mega-footer .star-left {
+        top: -37px;
+    }
+
+    #mega-footer .star-left img {
+        width: 170px;
+        height: 205px;
+        display: block;
+    }
+}

@@ -1,0 +1,18 @@
+.tab-movie .movie-hot {
+    background   : rgba(254, 209, 49, .4);
+    margin-bottom: 38px;
+}
+
+.trailer {
+    a {
+        text-decoration: none;
+        color          : black;
+        border         : none;
+
+        &:hover {
+            background-color: yellow;
+            font-weight     : bold;
+        }
+    }
+
+}

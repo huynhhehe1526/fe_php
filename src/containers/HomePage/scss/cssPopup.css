@@ -1,0 +1,46 @@
+.popup-content-booking{
+    background: white;
+    width: 700px;
+    min-height: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.popup-main-booking{
+    width: 100%;
+    position: fixed;
+    top: 15%;
+    display: none;
+}
+.img-loading{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+    display: none;
+}
+.show-content-booking .box-table
+{
+    padding: 35px;
+    background-color: #fff;
+}
+.show-content-booking .box-table table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #b4b4b4;
+}
+.show-content-booking .box-table table th{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffcf29;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    text-align: left;
+    font-weight: bold;
+}
