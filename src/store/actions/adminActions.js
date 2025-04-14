@@ -502,7 +502,7 @@ export const fetchAllMovies = () => {
         try {
             let res = await getAllMovie();
             if (res && res.error == 0) {
-                dispatch(fetchAllMoviesSucess(res.data));
+                dispatch(fetchAllMoviesSucess(res.data.reverse()));
             } else {
                 dispatch(fetchAllMoviesFailed());
             }

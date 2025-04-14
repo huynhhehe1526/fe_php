@@ -235,7 +235,7 @@ class ShowtimeRedux extends Component {
                                     <DatePicker
                                         className="form-control"
                                         onChange={this.handleOnchangeDatePicker}
-                                        value={date}
+                                        value={moment(`${date}`).format('DD/MM/YYYY')}
                                     //lấy ngày hôm qua
                                     //minDate={yesterday}
                                     />

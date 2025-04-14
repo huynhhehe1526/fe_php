@@ -6,6 +6,7 @@ import './scss/custom-style.scss';
 import Footer from './Footer';
 import { detailMovie, showAllShowtimeByMovieId } from '../../services/userService';
 import Comment from './SocialPlugin/Comment';
+import { lang } from 'moment';
 
 class DetailMovie extends Component {
     constructor(props) {
@@ -51,9 +52,9 @@ class DetailMovie extends Component {
             })
         }
 
-        if (this.props.userInfo === null) {
-            this.props.history.push('/login');
-        }
+        // if (this.props.userInfo === null) {
+        //     this.props.history.push('/login');
+        // }
     }
     handleRedirectBooking = (idUser) => {
         //kiểm tra xem người dùng đã đăng nhập chưa. Nếu chưa thì thông báo vui lòng đăng nhập
@@ -62,7 +63,8 @@ class DetailMovie extends Component {
                 return this.props.history.push(`/booking-ticket/${idUser}`)
             }
         } else {
-            alert('Vui lòng đăng nhập để thực hiện đặt vé!!!!')
+            alert('Vui lòng đăng nhập để thực hiện đặt vé!!!!');
+            return this.props.history.push('/login');
         }
         //return this.props.history.push(`/booking-ticket/${idUser}`)
 
@@ -115,58 +117,68 @@ class DetailMovie extends Component {
                                     <div class="img-content">
                                         <div class="box">
                                             <div class="box-left">
-                                                <p class="icon-detail-yell">Thời lượng: <span>
-                                                    {detail.duration}
-                                                </span></p>
-                                                <p class="icon-detail-yell-2">Khởi chiếu: <span>
+                                                <p class="icon-detail-yell"><FormattedMessage id="detail-movie.duration" />:&nbsp;
+                                                    <span>
+                                                        {detail.duration}
+                                                    </span></p>
+                                                <p class="icon-detail-yell-2"><FormattedMessage id="detail-movie.premiere" />:&nbsp;<span>
                                                     {detail.premiere_date}
                                                 </span></p>
                                             </div>
                                             <div class="box-right">
-                                                <p class="icon-detail-yell-1">Thể loại: <span>
+                                                <p class="icon-detail-yell-1">
+                                                    <FormattedMessage id="detail-movie.genre" />:&nbsp;<span>
 
-                                                    {detail && detail.associate_genre
-                                                        && language === LANGUAGES.VI && (
-                                                            <span>
-                                                                {detail.associate_genre.valueVi}
-                                                            </span>
-                                                        )}
-                                                    {detail && detail.associate_genre
-                                                        && language === LANGUAGES.EN && (
-                                                            <span>
-                                                                {detail.associate_genre.valueEn}
-                                                            </span>
-                                                        )}
+                                                        {detail && detail.associate_genre
+                                                            && language === LANGUAGES.VI && (
+                                                                <span>
+                                                                    {detail.associate_genre.valueVi}
+                                                                </span>
+                                                            )}
+                                                        {detail && detail.associate_genre
+                                                            && language === LANGUAGES.EN && (
+                                                                <span>
+                                                                    {detail.associate_genre.valueEn}
+                                                                </span>
+                                                            )}
 
 
 
-                                                </span></p>
+                                                    </span></p>
                                             </div>
                                         </div>
                                         <div class="box2">
-                                            <p class="p-bold">Đạo diễn: <span>
+                                            <p class="p-bold"><FormattedMessage id="detail-movie.director" />:&nbsp;<span>
                                                 {detail.director}
                                             </span></p>
-                                            <p class="p-bold">Diễn viên: <span>
+                                            <p class="p-bold"><FormattedMessage id="detail-movie.actor" />:&nbsp; <span>
                                                 {detail.actor}
                                             </span></p>
                                         </div>
                                         <div class="clearfix"></div>
 
-                                        <p class="p-bold">Phụ đề: <span>
+                                        <p class="p-bold"><FormattedMessage id="detail-movie.subtitle" />:&nbsp; <span>
                                             {detail.subtitle}
                                         </span></p>
                                         <br />
                                         <p class="p-bold"
-                                        >Trạng thái:&nbsp;&nbsp;
-                                            {detail && detail.status_movie &&
+                                        ><FormattedMessage id="detail-movie.status" />&nbsp;&nbsp;
+                                            {detail && detail.status_movie && language === LANGUAGES.VI &&
                                                 <span>{detail.status_movie.valueVi}</span>
+
+                                            }
+                                            {detail && detail.status_movie && language === LANGUAGES.EN &&
+
+                                                <span>{detail.status_movie.valueEn}</span>
                                             }
 
                                         </p>
                                         <div class="clearfix"></div>
                                         <div class="dt-film-content scroll-detail clearfix">
-                                            <p>
+                                            <p
+                                                class="p-bold"
+                                            >
+                                                Preview
                                                 <p><span>
                                                     {detail.preview}
                                                 </span></p>
@@ -190,7 +202,6 @@ class DetailMovie extends Component {
                                             <a class="play-icon"
                                                 href={`${detail.video}`}
                                                 target='blank'
-                                                pla
                                             >Trailer</a>
 
                                         </a>

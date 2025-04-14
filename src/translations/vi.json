@@ -38,7 +38,9 @@
         "just-want-to-be-close-to-you": "Chỉ muốn gần bên em",
         "instinctual-infatuation": "Bản năng si mê",
         "see": "Xem",
-        "welcome": "Xin chào, "
+        "welcome": "Xin chào, ",
+        "movierecommend": "Phim đề xuất",
+        "movieoutstanding": "Phim nổi bật tuần qua"
     },
     "footer": {
         "general-information": "Thông tin chung",
@@ -75,7 +77,7 @@
             "booking-ticket": "Quản lý đặt vé",
             "booking-ticket-wait": "Vé trạng thái chờ",
             "booking-ticket-confirm": "Vé đã xác nhận",
-            "booking":"Đơn đặt vé"
+            "booking": "Đơn đặt vé"
         },
         "doctor": {
             "manage-schedule": "Quản lý lịch khám",
@@ -96,11 +98,29 @@
         "image": "Ảnh đại diện",
         "save": "Lưu",
         "edit": "Lưu thay đổi",
-        "upload-image": "Tải ảnh"
+        "upload-image": "Tải ảnh",
+        "fullName": "Họ tên",
+        "userName": "Biệt danh"
     },
     "homepage": {
         "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
         "more-info": "Xem thêm"
+    },
+    "list-movie": {
+        "sort": "Sắp xếp",
+        "sortname": "Sắp tên theo",
+        "list": "Danh sách phim",
+        "movie-showing": "Phim đang chiếu",
+        "movie-soon": "Phim sắp chiếu"
+    },
+    "detail-movie": {
+        "duration": "Thời lượng",
+        "premiere": "Khởi chiếu",
+        "genre": "Thể loại",
+        "director": "Đạo diễn",
+        "actor": "Diễn viên",
+        "subtitle": "Phụ đề",
+        "status": "Trạng thái"
     },
     "manage-schedule": {
         "title": "Quản lý kế hoạch khám bệnh của bác sĩ",

@@ -38,7 +38,9 @@
         "just-want-to-be-close-to-you": "Just want to be close to you",
         "instinctual-infatuation": "Instinctual infatuation",
         "see": "See",
-        "welcome": "Welcome, "
+        "welcome": "Welcome, ",
+        "movierecommend": "Movie propose",
+        "movieoutstanding": "Featured movies last week"
     },
     "footer": {
         "general-information": "General information",
@@ -211,6 +213,27 @@
         "image": "Avatar",
         "save": "Save",
         "edit": "Save changes",
-        "upload-image": "upload image"
+        "upload-image": "upload image",
+        "fullName": "Full name",
+        "userName": "User name"
+    },
+    "homepage": {
+        "more-info": "More"
+    },
+    "list-movie": {
+        "sort": "Sort",
+        "sortname": "Sort name by",
+        "list": "List movie",
+        "movie-showing": "Movie showing",
+        "movie-soon": "Movie coming soon"
+    },
+    "detail-movie": {
+        "duration": "Duration",
+        "premiere": "Premiere",
+        "genre": "Genre",
+        "director": "Director",
+        "actor": "Actor",
+        "subtitle": "Subtitle",
+        "status": "Status"
     }
 }

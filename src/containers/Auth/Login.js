@@ -85,9 +85,10 @@ class Login extends Component {
                         this.props.history.push('/home')
                     }
                     if (data && data.error) {
+                        toast.error(''+data.error);
                         // this.props.userLoginSuccess(data.user)
                         // console.log('Login succeed!!!');
-                        toast.error(data.error);
+
                     }
                 }
 

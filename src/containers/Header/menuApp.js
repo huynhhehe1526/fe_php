@@ -103,7 +103,7 @@ export const staffmenu = [
                 name: 'menu.admin.booking-ticket-wait', link: '/system/booking-ticket-wait'
             }
         ]
-    }
+    },
 ];
 
 export const customermenu = [

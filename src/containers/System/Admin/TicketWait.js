@@ -41,6 +41,7 @@ class TicketWait extends Component {
         let res1 = await getConfirmBooking(item);
         if (res1) {
             toast.success('Send email successfull!!!!')
+            await getAllInfoUserBooking();
         }
         else {
             toast.error('Error')

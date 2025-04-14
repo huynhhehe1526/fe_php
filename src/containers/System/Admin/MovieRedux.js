@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 import DatePicker from '../../../components/Input/DatePicker';
 import moment from 'moment';
 import { createMovie, updateMovie } from '../../../services/userService';
+import { capitalize } from 'lodash';
 
 
 class MovieRedux extends Component {
@@ -267,6 +268,7 @@ class MovieRedux extends Component {
                                 <input className='form-control' type='text'
                                     value={title}
                                     onChange={(event) => this.OnChangeInput(event, 'title')}
+                                    style={{ textTransform: 'capitalize' }}
                                 />
                             </div>
                             {/* image */}
@@ -334,6 +336,7 @@ class MovieRedux extends Component {
                                 <input className='form-control' type='text'
                                     value={director}
                                     onChange={(event) => this.OnChangeInput(event, 'director')}
+                                    style={{ textTransform: 'capitalize' }}
                                 />
                             </div>
 
@@ -384,6 +387,7 @@ class MovieRedux extends Component {
                                 <input className='form-control' type='text'
                                     value={actor}
                                     onChange={(event) => this.OnChangeInput(event, 'actor')}
+                                    style={{ textTransform: 'capitalize' }}
                                 />
                             </div>
 
@@ -408,6 +412,7 @@ class MovieRedux extends Component {
                                 <input className='form-control' type='text'
                                     value={subtitle}
                                     onChange={(event) => this.OnChangeInput(event, 'subtitle')}
+                                    style={{ textTransform: 'capitalize' }}
                                 />
                             </div>
 

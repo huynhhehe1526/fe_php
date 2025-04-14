@@ -3,28 +3,6 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './HomeHeader.scss';
 import bg from '../../assets/images/img_homeheader/bg_1.jpg';
-import ngao_the_dan_than from '../../assets/images/img_homeheader/Ngao_The_Dan_Than.jpg';
-import co_mot_ke_lang_thang from '../../assets/images/img_homeheader/co_mot_ke_lang_thang.jpg';
-import diu_dang_tan_xuong from '../../assets/images/img_homeheader/diu-dang-tan-xuong.jpg';
-import linh_vu_thien_ha from '../../assets/images/img_homeheader/linh_vu_thien_ha.jpg';
-import hay_nham_mat_khi_anh_den from '../../assets/images/img_homeheader/nham-mat-khi-anh-den.jpg';
-import khom_lung from '../../assets/images/img_homeheader/khom-lung.jpg';
-import de_vuong_sung_ai from '../../assets/images/img_homeheader/De_vuong_sung_ai.jpg';
-
-
-//image-manga-propose
-import me_man_vi_em from '../../assets/images/img_manga_propose/me-man-vi-em-min.jpg';
-import cong_luoc_trai_tim from '../../assets/images/img_manga_propose/cong_luoc_trai_tim.jpg';
-import co_ay_den_xem_concert_cua_toi from '../../assets/images/img_manga_propose/co_ay_den_xem_concert_cua_toi.png';
-import cay_kho_gap_xuan_ve from '../../assets/images/img_manga_propose/cay-kho-gap-xuan-ve.jpg';
-import tue_tue_an from '../../assets/images/img_manga_propose/tue_tue_an.jpg';
-import em_nghe_thay_duoc from '../../assets/images/img_manga_propose/em_nghe_thay_duoc.png';
-import hon_uoc_keo_ngot from '../../assets/images/img_manga_propose/hon-uoc-keo-ngot.jpg';
-import chim_hoang_yen_nuoi_tam_nam_da_bay_di from '../../assets/images/img_manga_propose/chim_hoang_yen_nuoi_tam_nam_da_bay_di.jpg';
-import chi_muon_gan_ben_em from '../../assets/images/img_manga_propose/chi_muon_gan_ben_em.webp';
-import ban_nang_si_me from '../../assets/images/img_manga_propose/ban-nang-si-me.webp';
-
-
 
 import logo from '../../assets/images/img_homeheader/webtoon-logo.png';
 import { withRouter } from 'react-router';
@@ -34,14 +12,6 @@ import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from '../../utils';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import img1 from '../../assets/images/img_homeheader/bg_2.jpg';
-import img2 from '../../assets/images/img_homeheader/bg_1.jpg';
-import img3 from '../../assets/images/img_homeheader/bg_3.png';
-import img4 from '../../assets/images/img_homeheader/bg4.jpg';
-import img5 from '../../assets/images/img_homeheader/anime-background.jpg';
-import img6 from '../../assets/images/img_homeheader/bg7.jpg';
-import img7 from '../../assets/images/img_homeheader/bg8.jpg';
-
 
 
 
@@ -55,7 +25,6 @@ import bg7 from '../../assets/images/image_movie/bg7.jpg';
 import bg8 from '../../assets/images/image_movie/bg8_out.jpg';
 import bg9 from '../../assets/images/image_movie/bg9.jpg';
 import bg10 from '../../assets/images/image_movie/bg10.jpg';
-
 
 import { getAllStory, get10Movie } from '../../services/userService';
 import Slider from "react-slick";
@@ -113,6 +82,7 @@ class HomeHeader extends Component {
         if (this.props.history) {
             this.props.history.push(`/cart`)
         }
+
     }
 
     redirectToHome = () => {
@@ -244,6 +214,13 @@ class HomeHeader extends Component {
                             onClick={() => this.renderLogin()}
                         >Login</div>
 
+                        <a href='https://drive.google.com/file/d/1QSHn4hfqZrI8txrwnl5yM_L_axQwwGvq/view'
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            target='blank'
+                        >
+                            Document.pdf
+                        </a>
+
                     </div>
                 </div>
                 {/* Phần banner */}
@@ -331,7 +308,7 @@ class HomeHeader extends Component {
 
 
                         <h3>
-                            Phim đề xuất
+                            <FormattedMessage id="homeheader.movierecommend"></FormattedMessage>
                         </h3>
                         <div className='manga-propose'>
                             <ul className='list-manga-propose'>
@@ -370,7 +347,7 @@ class HomeHeader extends Component {
                             <div className='section-container'>
                                 <div className='section-header'>
                                     <span className='title-section'>
-                                        Tác phẩm nổi bật tuần qua
+                                        <FormattedMessage id="homeheader.movieoutstanding"></FormattedMessage>
                                     </span>
                                     <button className='btn-section'>
                                         <FormattedMessage id="homepage.more-info" />

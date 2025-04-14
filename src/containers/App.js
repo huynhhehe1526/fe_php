@@ -19,13 +19,6 @@ import CartPage from './HomePage/CartPage';
 import Story_ByCategory_HD from './HomePage/Story_ByCategory_HD';
 import CustomScrollbars from '../components/CustomScrollbars';
 import Story_Content from './HomePage/Story_Content';
-import DemoManga from './HomePage/DemoManga';
-import NgaoTheDanThan from './HomePage/NgaoTheDanThan';
-import DiuDangTanXuong from './HomePage/DiuDangTanXuong';
-import LinhVuThienHa from './HomePage/LinhVuThienHa';
-import HayNhamMatKhiAnhDen from './HomePage/HayNhamMatKhiAnhDen';
-import KhomLung from './HomePage/KhomLung';
-import DeVuongSungAi from './HomePage/DeVuongSungAi';
 import { Bounce, ToastContainer } from 'react-toastify';
 import Register from './Auth/Register';
 import Regular from './HomePage/Regular';
@@ -73,14 +66,8 @@ class App extends Component {
                                     <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
                                     <Route path={path.HOMEPAGE} component={HomePage} />
                                     <Route path={path.CART_PAGE} component={CartPage} />
-                                    <Route path={path.DEMO_MANGA} component={DemoManga}></Route>
-                                    <Route path={path.TP_NGAO_THE_DAN_THAN} component={NgaoTheDanThan}></Route>
 
-                                    <Route path={path.DIU_DANG_TAN_XUONG} component={DiuDangTanXuong}></Route>
-                                    <Route path={path.LINH_VU_THIEN_HA} component={LinhVuThienHa}></Route>
-                                    <Route path={path.HAY_NHAM_MAT_KHI_ANH_DEN} component={HayNhamMatKhiAnhDen}></Route>
-                                    <Route path={path.KHOM_LUNG} component={KhomLung}></Route>
-                                    <Route path={path.DE_VUONG_SUNG_AI} component={DeVuongSungAi}></Route>
+
 
                                     <Route path={path.List_Story_ByCategory} component={Story_ByCategory_HD} />
                                     <Route path={path.Load_Content_By_Story} component={Story_Content} />

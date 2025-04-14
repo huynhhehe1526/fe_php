@@ -350,6 +350,19 @@ const getInforBookingUser = async (idInput) => {
     return response;
 }
 
+//get movie by : genre and status movie
+const getMovieByGenreAndStatus = async (inputGenre, inputStatus) => {
+    const response = await axios.get(`/api/getMoviesByGenreAndStatus?genreId=${inputGenre}&statusId=${inputStatus}`);
+    return response;
+}
+
+const getMovieByStatus = async (inputStatus) => {
+    const response = await axios.get(`/api/getMoviesByStatus?statusId=${inputStatus}`);
+    console.log('List Movie by satus: ', response)
+    return response;
+}
+
+
 export {
     handleLoginApi,
     getAlCategories,
@@ -385,7 +398,8 @@ export {
     //handle booking
     getAllInfoUserBooking, getConfirmBooking, getDetailBookingById,
     //get all booking confirmed
-    getAllInfoUserConfirm, getInforBookingUser
+    getAllInfoUserConfirm, getInforBookingUser,
+    getMovieByGenreAndStatus, getMovieByStatus
 }
 
 
