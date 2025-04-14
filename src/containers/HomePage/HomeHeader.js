@@ -214,12 +214,12 @@ class HomeHeader extends Component {
                             onClick={() => this.renderLogin()}
                         >Login</div>
 
-                        <a href='https://drive.google.com/file/d/1QSHn4hfqZrI8txrwnl5yM_L_axQwwGvq/view'
+                        {/* <a href='https://drive.google.com/file/d/1QSHn4hfqZrI8txrwnl5yM_L_axQwwGvq/view'
                             style={{ textDecoration: 'none', color: 'white' }}
                             target='blank'
                         >
                             Document.pdf
-                        </a>
+                        </a> */}
 
                     </div>
                 </div>
