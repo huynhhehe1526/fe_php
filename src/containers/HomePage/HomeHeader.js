@@ -71,6 +71,7 @@ class HomeHeader extends Component {
 
     fetch10Movie = async () => {
         let res = await get10Movie();
+        console.log("Check dtaaa hien thi 10 movie: ", res);
         if (res && res.error == 0 && res.data) {
             this.setState({
                 listMovies: res.data
