@@ -46,7 +46,7 @@ class HomeHeader extends Component {
     async componentDidMount() {
         console.log('huynh check prop cho hàm didmount: ', this.props.loadCategories())
 
-        await this.fetchAllStory();
+        // await this.fetchAllStory();
 
         console.log('Huynh check thử fetch10Movie: ', await this.fetch10Movie())
     }
@@ -60,14 +60,14 @@ class HomeHeader extends Component {
         }
     }
 
-    fetchAllStory = async () => {
-        let res = await getAllStory(10);
-        if (res && res.errCode == 0 && res.data) {
-            this.setState({
-                listStories: res.data
-            })
-        }
-    }
+    // fetchAllStory = async () => {
+    //     let res = await getAllStory(10);
+    //     if (res && res.errCode == 0 && res.data) {
+    //         this.setState({
+    //             listStories: res.data
+    //         })
+    //     }
+    // }
 
     // fetch10Movie = async () => {
     //     let res = await get10Movie();
