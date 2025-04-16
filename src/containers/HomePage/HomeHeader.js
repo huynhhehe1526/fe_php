@@ -46,9 +46,9 @@ class HomeHeader extends Component {
     async componentDidMount() {
         console.log('huynh check prop cho hàm didmount: ', this.props.loadCategories())
 
-        this.fetchAllStory();
+        await this.fetchAllStory();
 
-        console.log('Huynh check thử fetch10Movie: ', this.fetch10Movie())
+        console.log('Huynh check thử fetch10Movie: ', await this.fetch10Movie())
     }
 
 
@@ -69,15 +69,32 @@ class HomeHeader extends Component {
         }
     }
 
+    // fetch10Movie = async () => {
+    //     let res = await get10Movie();
+    //     console.log("Check dtaaa hien thi 10 movie: ", res);
+    //     if (res && res.error == 0 && res.data) {
+    //         this.setState({
+    //             listMovies: res.data
+    //         })
+    //     }
+    // }
+
     fetch10Movie = async () => {
-        let res = await get10Movie();
-        console.log("Check dtaaa hien thi 10 movie: ", res);
-        if (res && res.error == 0 && res.data) {
-            this.setState({
-                listMovies: res.data
-            })
+        try {
+            let res = await get10Movie();
+            console.log("Check dtaaa hien thi 10 movie: ", res);
+            if (res && res.error === 0 && res.data) {
+                this.setState({
+                    listMovies: res.data
+                });
+            } else {
+                console.error("Lỗi khi lấy dữ liệu: ", res);
+            }
+        } catch (error) {
+            console.error("Có lỗi xảy ra khi gọi API fetch10Movie: ", error);
         }
     }
+    
 
     redirectToCart = () => {
         if (this.props.history) {
