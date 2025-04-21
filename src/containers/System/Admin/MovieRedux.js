@@ -149,6 +149,7 @@ class MovieRedux extends Component {
         if (isValid === false) {
             return;
         }
+        
         const formData = new FormData();
         formData.append('title', title);
         formData.append('image', image);

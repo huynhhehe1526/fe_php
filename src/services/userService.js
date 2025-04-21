@@ -177,7 +177,13 @@ const getAllGenre = async () => {
 
 const createMovie = async (formData) => {
     try {
-        const response = await axios.post(`/api/createMovie`, formData);
+        const response = await axios.post(`/api/createMovie`, formData,
+            {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                }
+            }
+        );
         console.log('Huynh check thử createMovie: ', response);
         return response;
     } catch (error) {
