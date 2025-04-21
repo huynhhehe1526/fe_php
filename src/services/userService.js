@@ -151,7 +151,7 @@ const register = async (data) => {
     // return axios.post(`/api/register`, data)
     const response = await axios.post(`/api/register`, data,  {
         headers: {
-            'Content-Type': 'multipart/form-data',
+            'Content-Type': 'application/json',  // For form data (text fields)
         }
     });
     //console.log('Huynh check thử register: ', response)
