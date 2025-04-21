@@ -97,11 +97,19 @@ const getAllStory = (limit) => {
 
 
 const changepassword = (data) => {
-    return axios.post(`/api/change-password`, data)
+    return axios.post(`/api/change-password`, data,  {
+        headers: {
+            'Content-Type': 'multipart/form-data',
+        }
+    })
 }
 
 const changePasswordVerifyEmail = (data) => {
-    return axios.post(`/api/verify-change-password`, data)
+    return axios.post(`/api/verify-change-password`, data,  {
+        headers: {
+            'Content-Type': 'multipart/form-data',
+        }
+    })
 }
 
 const hienthi = () => {
@@ -141,7 +149,11 @@ const getAllCode = async (type) => {
 }
 const register = async (data) => {
     // return axios.post(`/api/register`, data)
-    const response = await axios.post(`/api/register`, data);
+    const response = await axios.post(`/api/register`, data,  {
+        headers: {
+            'Content-Type': 'multipart/form-data',
+        }
+    });
     //console.log('Huynh check thử register: ', response)
     return response;
 }
@@ -286,13 +298,23 @@ const deleteShowtime = async (showtimeId) => {
 
 //forgot and reset password
 const resetpass = async (data) => {
-    const response = await axios.post(`/api/forgotPassword`, data);
+    const response = await axios.post(`/api/forgotPassword`, data, 
+        {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            }
+        }
+    );
     //console.log('Huynh check thử updateMovie: ', response)
     return response;
 }
 
 const verifyresetpass = async (data) => {
-    const response = await axios.post(`/api/verifyChangePass`, data);
+    const response = await axios.post(`/api/verifyChangePass`, data,  {
+        headers: {
+            'Content-Type': 'multipart/form-data',
+        }
+    });
     //console.log('Huynh check thử updateMovie: ', response)
     return response;
 }
@@ -338,9 +360,18 @@ const getAllInfoUserBooking = async () => {
 
 //get confirm booking
 const getConfirmBooking = async (inputId) => {
-    const respone = await axios.get(`/api/getConfirmBooking?id=${inputId}`);
-    return respone;
+    // const respone = await axios.get(`/api/getConfirmBooking?id=${inputId}`);
+    // return respone;
+    const response = await axios.get(`/api/getConfirmBooking?id=${inputId}`, {
+        headers: {
+            Authorization: `Bearer ${yourToken}`,
+            'Content-Type': 'application/json'
+        }
+    });
 }
+
+
+
 //get detail booking by id
 
 const getDetailBookingById = async (inputId) => {
