@@ -364,7 +364,6 @@ const getConfirmBooking = async (inputId) => {
     // return respone;
     const response = await axios.get(`/api/getConfirmBooking?id=${inputId}`, {
         headers: {
-            Authorization: `Bearer ${yourToken}`,
             'Content-Type': 'application/json'
         }
     });
