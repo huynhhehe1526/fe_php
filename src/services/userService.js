@@ -311,7 +311,11 @@ const getAllSeat = async () => {
 const paymentBooking = async (formData) => {
 
     try {
-        const response = await axios.post(`/api/paymentBooking`, formData);
+        const response = await axios.post(`/api/paymentBooking`, formData,
+            {
+            headers: {
+            'Content-Type': 'multipart/form-data',
+        }});
         return response;
     } catch (error) {
         console.error('There was a problem with the paymentBooking:', error);
